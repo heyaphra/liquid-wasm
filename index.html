@@ -14,7 +14,6 @@
         sgram: Module.cwrap('sgram', 'number', []),
         ringBuffer: Module.cwrap('ringBuffer', 'number', []),
       };
-      api.sgram();
       document.getElementById('restart').addEventListener('click', () => api.sgram())
     };
   </script>
@@ -38,7 +37,7 @@
   // (Open your console!)
 </code>
   <p>
-    <button id='restart'>restart</button>
+    <button id='restart'>run</button>
     <a href='https://github.com/bloom510/liquid-wasm'>GitHub Repo</a>
   </p>
 </body>
