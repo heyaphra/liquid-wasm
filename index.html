@@ -15,12 +15,14 @@
         ringBuffer: Module.cwrap('ringBuffer', 'number', []),
       };
       api.sgram();
+      document.getElementById('restart').addEventListener('click', () => api.sgram())
     };
   </script>
 </head>
 
 <body>
  Open your console!
+ <button id='restart'>restart</button>
 </body>
 
 </html>
