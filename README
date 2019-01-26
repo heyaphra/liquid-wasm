@@ -1,5 +1,6 @@
  
  WASM build of liquid-dsp, a DSP library designed specifically for software-defined radios on embedded platforms.
+ Original repo: https://github.com/jgaeddert/liquid-dsp
 
  This library was compiled to WASM by doing the following:
 
