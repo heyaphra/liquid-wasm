@@ -1,6 +1,7 @@
  
  WASM build of liquid-dsp, a DSP library designed specifically for software-defined radios on embedded platforms.
  Original repo: https://github.com/jgaeddert/liquid-dsp
+ Live example (must have access to dev console): https://bloom510.art/liquid-wasm
 
  This library was compiled to WASM by doing the following:
 
@@ -8,7 +9,7 @@
  2. Creating liquid.c to test codes found in the examples folder
  3. Built by running the command: emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' \ -I liquid-dsp \ liquid.c \ liquid-dsp/libliquid.so
 
- Nothing has been done with this WASMified library as of yet. A world of possibilities awaits!
+ Not much has been done with this WASMified library as of yet. A world of possibilities awaits!
  Write your own functions in liquid.c, import them in the JS at index.html and make sure to build using step 3.
 
  Spin up a simple HTTP server to run locally.
